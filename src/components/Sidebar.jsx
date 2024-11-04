@@ -1,29 +1,34 @@
-// Sidebar.jsx
-const Sidebar = ({ handleCategoryClick }) => {
+const categories = [
+  "All Products",
+  "Laptops",
+  "Phones",
+  "Accessories",
+  "Smart-Watches",
+  "MacBooks",
+  "iPhones",
+];
+
+const Sidebar = ({ selectedCategory, onSelect }) => {
+  function handleSelect(category) {
+    if (category === "All Products") {
+      onSelect("all");
+    } else {
+      onSelect(category.toLowerCase());
+    }
+  }
+
   return (
-    <div className="w-1/5 mt-10">
-      <ul className="space-y-2  p-4 bg-gray-200 rounded-3xl">
-        <button onClick={() => handleCategoryClick("all")} className="btn rounded-full block w-full mx-auto">
-          All Products
-        </button>
-        <button onClick={() => handleCategoryClick("laptops")} className="btn rounded-full block w-full mx-auto">
-          Laptops
-        </button>
-        <button onClick={() => handleCategoryClick("phones")} className="btn rounded-full block w-full mx-auto">
-          Phones
-        </button>
-        <button onClick={() => handleCategoryClick("accessories")} className="btn rounded-full block w-full mx-auto">
-          Accessories
-        </button>
-        <button onClick={() => handleCategoryClick("smart-watches")} className="btn rounded-full block w-full mx-auto">
-          Smart Watches
-        </button>
-        <button onClick={() => handleCategoryClick("macbooks")} className="btn rounded-full block w-full mx-auto">
-          MacBooks
-        </button>
-        <button onClick={() => handleCategoryClick("iphones")} className="btn rounded-full block w-full mx-auto">
-          iPhones
-        </button>
+    <div className="w-1/5">
+      <ul className="space-y-2 p-4 bg-gray-200 rounded-3xl">
+        {categories.map((category, i) => (
+          <li
+            key={i}
+            className={`btn flex rounded-full block w-full mx-auto ${selectedCategory === category.toLowerCase() ? "bg-purple-500 text-white" : ""}`}
+            onClick={() => handleSelect(category)}
+          >
+            {category}
+          </li>
+        ))}
       </ul>
     </div>
   );
