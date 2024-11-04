@@ -10,11 +10,8 @@ const categories = [
 
 const Sidebar = ({ selectedCategory, onSelect }) => {
   function handleSelect(category) {
-    if (category === "All Products") {
-      onSelect("all");
-    } else {
-      onSelect(category.toLowerCase());
-    }
+    if (category === "All Products") onSelect("all");
+    else onSelect(category.toLowerCase());
   }
 
   return (
@@ -23,7 +20,7 @@ const Sidebar = ({ selectedCategory, onSelect }) => {
         {categories.map((category, i) => (
           <li
             key={i}
-            className={`btn flex rounded-full block w-full mx-auto ${selectedCategory === category.toLowerCase() ? "bg-purple-500 text-white" : ""}`}
+            className="btn flex rounded-full block w-full mx-auto"
             onClick={() => handleSelect(category)}
           >
             {category}
@@ -35,3 +32,4 @@ const Sidebar = ({ selectedCategory, onSelect }) => {
 };
 
 export default Sidebar;
+

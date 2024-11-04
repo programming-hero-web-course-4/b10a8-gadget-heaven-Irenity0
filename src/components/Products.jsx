@@ -7,7 +7,7 @@ const Products = ({ selectedCategory }) => {
       return productsInfo;
     } else {
       return productsInfo.filter(
-        (product) => product.category === selectedCategory
+        (product) => product.category.toLowerCase() === selectedCategory
       );
     }
   }
@@ -18,7 +18,7 @@ const Products = ({ selectedCategory }) => {
     <div className="w-10/12 mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {products.map((product) => (
-          <Product product={product} key={product.product_id}></Product>
+          <Product product={product} key={product.product_id} />
         ))}
       </div>
     </div>

@@ -9,7 +9,7 @@ const ProductSection = () => {
     <>
       <h2 className="text-4xl font-bold text-center">
         Explore Cutting Edge Gadgets
-      </h2>{" "}
+      </h2>
       <br />
       <br />
       <div className="flex gap-12 w-11/12 mx-auto">
@@ -24,3 +24,4 @@ const ProductSection = () => {
 };
 
 export default ProductSection;
+
