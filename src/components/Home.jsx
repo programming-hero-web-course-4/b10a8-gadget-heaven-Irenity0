@@ -1,7 +1,11 @@
+import Banner from "./Banner";
+import ProductSection from "./ProductSection";
+
 const Home = () => {
     return (
         <>
-        <h2 className="text-5xl font-bold">uwu</h2>
+        <Banner></Banner>
+        <ProductSection></ProductSection>
         </>
     );
 };
