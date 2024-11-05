@@ -39,8 +39,8 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                         >
                             <li><NavLink to={'/'}>Home</NavLink></li>
-                        <li><NavLink to={'/statistics'}>Statistics</NavLink></li>
-                        <li><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
+                            <li><NavLink to={'/statistics'}>Statistics</NavLink></li>
+                            <li><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-2xl font-bold">Gadget Heaven</a>
@@ -50,13 +50,11 @@ const Navbar = () => {
                         <li><NavLink to={'/'}>Home</NavLink></li>
                         <li><NavLink to={'/statistics'}>Statistics</NavLink></li>
                         <li><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
-                        {/* <li><a>Home</a></li>
-                        <li><a>Statistics</a></li>
-                        <li><a>Dashboard</a></li> */}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <i className="mr-4 border-slate-200 text-1xl p-2 border rounded-full fa-solid fa-cart-shopping"></i>
+                    <i className="mr-4 border-slate-200 text-1xl p-2 border rounded-full fa-solid fa-cart-shopping">
+                    </i>
                     <i className="mr-4 border-slate-200 text-1xl p-2 border rounded-full fa-regular fa-heart"></i>
                 </div>
             </div>

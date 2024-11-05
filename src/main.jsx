@@ -12,6 +12,9 @@ import Dashboard from './components/Dashboard';
 import Products from './components/Products';
 import ProductDetail from './components/ProductDetail';
 import Statistics from './components/Statistics';
+import Cart from './components/Cart';
+import WishList from './components/WishList';
+import AboutUs from './components/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +28,24 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard />
+        element: <Dashboard />,
+        children: [
+          {
+            index: true, 
+            element: <Cart></Cart>,
+            loader: () => fetch('/data.json')
+          },
+          {
+            path: 'cart',
+            element: <Cart></Cart>,
+            loader: () => fetch('/data.json')
+          },
+          {
+            path: 'wishlist',
+            element: <WishList></WishList>,
+            loader: () => fetch('/data.json')
+          }
+        ]
       },
       {
         path: '/statistics',
@@ -38,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: '/products/:productId',
         element: <ProductDetail />
+      },
+      {
+        path: '/aboutus',
+        element: <AboutUs></AboutUs>
       }
     ]
   },
@@ -45,6 +69,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+      <RouterProvider router={router} />
+  </StrictMode>
 );

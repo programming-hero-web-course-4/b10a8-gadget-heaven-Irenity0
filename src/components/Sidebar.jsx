@@ -20,7 +20,7 @@ const Sidebar = ({ selectedCategory, onSelect }) => {
         {categories.map((category, i) => (
           <li
             key={i}
-            className="btn flex rounded-full block w-full mx-auto"
+            className="btn flex rounded-full w-full mx-auto"
             onClick={() => handleSelect(category)}
           >
             {category}

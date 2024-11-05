@@ -4,7 +4,7 @@
         "product_title": "Dell XPS 13",
         "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Dell-XPS-13-Plus-BD-Price-1.jpg",
         "category": "laptops",
-        "price": 499.99,
+        "price": 999.99,
         "description": "A high-performance laptop with a stunning display and compact design.",
         "specifications": {
             "processor": "Intel i7",
@@ -20,7 +20,7 @@
         "product_title": "Apple MacBook Air",
         "product_image": "https://cellucity.co.za/wp-content/uploads/2023/05/macbook_air_space_gray_with_m1.jpg",
         "category": "laptops",
-        "price": 299.99,
+        "price": 899.99,
         "description": "Ultra-lightweight and powerful laptop with M1 chip.",
         "specifications": {
             "processor": "Apple M1",
@@ -36,7 +36,7 @@
         "product_title": "HP Spectre x360",
         "product_image": "https://www.laptopsdirect.ie/Images/9D0K4EA_1_Supersize.jpg?v=5",
         "category": "laptops",
-        "price": 799.99,
+        "price": 1099.99,
         "description": "A versatile convertible laptop with a premium design.",
         "specifications": {
             "processor": "Intel i7",
@@ -52,7 +52,7 @@
         "product_title": "Lenovo ThinkPad X1 Carbon",
         "product_image": "https://i.pinimg.com/236x/30/8b/e4/308be4259434a023f6e8d5d7b0545629.jpg",
         "category": "laptops",
-        "price": 399.99,
+        "price": 1399.99,
         "description": "Business-class laptop with a carbon-fiber chassis.",
         "specifications": {
             "processor": "Intel i7",
@@ -68,7 +68,7 @@
         "product_title": "Asus ZenBook 14",
         "product_image": "https://i.pinimg.com/736x/c7/45/5f/c7455f85599ba663f18d1e147c661f9d.jpg",
         "category": "laptops",
-        "price": 549.99,
+        "price": 849.99,
         "description": "Sleek and lightweight laptop with long battery life.",
         "specifications": {
             "processor": "Intel i5",
@@ -84,7 +84,7 @@
         "product_title": "Microsoft Surface Laptop 4",
         "product_image": "https://i.pinimg.com/736x/8d/a3/90/8da39037509ed54664709df010769ef0.jpg",
         "category": "laptops",
-        "price": 499.99,
+        "price": 999.99,
         "description": "Stylish laptop with a high-resolution touchscreen.",
         "specifications": {
             "processor": "Intel i5",
@@ -100,7 +100,7 @@
         "product_title": "Samsung Galaxy S21",
         "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S21-FE-5G-Navy-Blue-6635.jpg",
         "category": "phones",
-        "price": 299.99,
+        "price": 799.99,
         "description": "Latest flagship smartphone with stunning camera capabilities.",
         "specifications": {
             "display": "6.2 inches",
@@ -116,7 +116,7 @@
         "product_title": "Apple iPhone 13",
         "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/3408-34138.jpg",
         "category": "phones",
-        "price": 299.99,
+        "price": 999.99,
         "description": "Powerful smartphone with exceptional performance.",
         "specifications": {
             "display": "6.1 inches",
@@ -132,7 +132,7 @@
         "product_title": "OnePlus 9",
         "product_image": "https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9-pro/Pine%20green-gallery..png",
         "category": "phones",
-        "price": 129.99,
+        "price": 729.99,
         "description": "Flagship smartphone with a fast and smooth experience.",
         "specifications": {
             "display": "6.55 inches",
@@ -148,7 +148,7 @@
         "product_title": "Google Pixel 6",
         "product_image": "https://www.custommacbd.com/cdn/shop/files/3784-23234.jpg?v=1687459730",
         "category": "phones",
-        "price": 399.99,
+        "price": 599.99,
         "description": "Smartphone with an excellent camera and Google Assistant integration.",
         "specifications": {
             "display": "6.4 inches",
@@ -233,7 +233,7 @@
         "product_title": "Apple MacBook Pro 13",
         "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKY2wS1bLRHiCjvX6rPMJx6spRoEH3dSbUkovNMV3LIGeTiCM1PzFPtFGgqeQuPnXhk1A&usqp=CAU",
         "category": "macbooks",
-        "price": 299.99,
+        "price": 1299.99,
         "description": "High-performance laptop with M1 chip.",
         "specifications": {
             "processor": "Apple M1",
@@ -249,7 +249,7 @@
         "product_title": "Apple MacBook Pro 16",
         "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDzKh_lvzPOOju8U4szsRDeYCwwGhCCxi-44vrMRGPvJwRXMmjWTwntR5PdFB3x53hX8&usqp=CAU",
         "category": "macbooks",
-        "price": 299.99,
+        "price": 2399.99,
         "description": "Powerful laptop for professional use with advanced graphics.",
         "specifications": {
             "processor": "Apple M1 Pro",
