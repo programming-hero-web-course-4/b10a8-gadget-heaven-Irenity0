@@ -20,7 +20,7 @@
         "product_title": "Apple MacBook Air",
         "product_image": "https://cellucity.co.za/wp-content/uploads/2023/05/macbook_air_space_gray_with_m1.jpg",
         "category": "laptops",
-        "price": 299.99,
+        "price": 250.99,
         "description": "Ultra-lightweight and powerful laptop with M1 chip.",
         "specifications": {
             "processor": "Apple M1",
@@ -36,7 +36,7 @@
         "product_title": "HP Spectre x360",
         "product_image": "https://www.laptopsdirect.ie/Images/9D0K4EA_1_Supersize.jpg?v=5",
         "category": "laptops",
-        "price": 799.99,
+        "price": 500.99,
         "description": "A versatile convertible laptop with a premium design.",
         "specifications": {
             "processor": "Intel i7",
@@ -84,7 +84,7 @@
         "product_title": "Microsoft Surface Laptop 4",
         "product_image": "https://i.pinimg.com/736x/8d/a3/90/8da39037509ed54664709df010769ef0.jpg",
         "category": "laptops",
-        "price": 499.99,
+        "price": 300.99,
         "description": "Stylish laptop with a high-resolution touchscreen.",
         "specifications": {
             "processor": "Intel i5",
@@ -148,7 +148,7 @@
         "product_title": "Google Pixel 6",
         "product_image": "https://www.custommacbd.com/cdn/shop/files/3784-23234.jpg?v=1687459730",
         "category": "phones",
-        "price": 399.99,
+        "price": 200.99,
         "description": "Smartphone with an excellent camera and Google Assistant integration.",
         "specifications": {
             "display": "6.4 inches",
@@ -164,7 +164,7 @@
         "product_title": "Wireless Earbuds",
         "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT10V9wIurj7iJ-a86q6aPF1qEEIg4jyZjYgBAjPBKihIQmQtouC0VQu5MENMpfySR_Pb8&usqp=CAU",
         "category": "accessories",
-        "price": 149.99,
+        "price": 100.99,
         "description": "Compact and comfortable wireless earbuds with great sound quality.",
         "specifications": {
             "battery_life": "20 hours",
@@ -178,7 +178,7 @@
         "product_title": "Portable Charger",
         "product_image": "https://media.wired.com/photos/6504b2a1afe02332db973557/master/w_320%2Cc_limit/Ugreen_Power_Bank-SOURCE-Ugreen-Gear.jpg",
         "category": "accessories",
-        "price": 39.99,
+        "price": 60.99,
         "description": "Power bank with fast charging capabilities.",
         "specifications": {
             "capacity": "10000mAh",
@@ -192,7 +192,7 @@
         "product_title": "Phone Case",
         "product_image": "https://m.media-amazon.com/images/I/71z8bQorkML.jpg",
         "category": "accessories",
-        "price": 19.99,
+        "price": 60.99,
         "description": "Stylish and durable phone case.",
         "specifications": {
             "compatibility": "Various models"
@@ -205,7 +205,7 @@
         "product_title": "Apple Watch Series 7",
         "product_image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Accessories/Apple/Watch%20Series%207/Stainless%20Steel/Watch-S7-SS-Gold-800x800.jpg",
         "category": "smart-watches",
-        "price": 399.99,
+        "price": 200.99,
         "description": "The latest smartwatch from Apple with advanced health tracking features.",
         "specifications": {
             "display": "1.9 inches",
@@ -219,7 +219,7 @@
         "product_title": "Samsung Galaxy Watch 4",
         "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVP2qKDgV5kQOl1HDP0bPumjwD13davF29_zhXitEe7Rs5RjSVtq4U7G9_bsRM_nmdXc&usqp=CAU",
         "category": "smart-watches",
-        "price": 249.99,
+        "price": 111.99,
         "description": "Smartwatch with fitness tracking and stylish design.",
         "specifications": {
             "display": "1.4 inches",
@@ -233,7 +233,7 @@
         "product_title": "Apple MacBook Pro 13",
         "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKY2wS1bLRHiCjvX6rPMJx6spRoEH3dSbUkovNMV3LIGeTiCM1PzFPtFGgqeQuPnXhk1A&usqp=CAU",
         "category": "macbooks",
-        "price": 299.99,
+        "price": 400.99,
         "description": "High-performance laptop with M1 chip.",
         "specifications": {
             "processor": "Apple M1",
@@ -249,7 +249,7 @@
         "product_title": "Apple MacBook Pro 16",
         "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDzKh_lvzPOOju8U4szsRDeYCwwGhCCxi-44vrMRGPvJwRXMmjWTwntR5PdFB3x53hX8&usqp=CAU",
         "category": "macbooks",
-        "price": 299.99,
+        "price": 240.99,
         "description": "Powerful laptop for professional use with advanced graphics.",
         "specifications": {
             "processor": "Apple M1 Pro",
@@ -265,7 +265,7 @@
         "product_title": "Apple iPhone 12",
         "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/1533-48820.jpg",
         "category": "iphones",
-        "price": 699.99,
+        "price": 349.99,
         "description": "Reliable smartphone with great performance and camera.",
         "specifications": {
             "display": "6.1 inches",
@@ -281,7 +281,7 @@
         "product_title": "Apple iPhone SE",
         "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWAXLWj6xkXiamF1yoxprth6Jgxh3xcC16c3YU-tBWw9AuCZTSd_0V9zF7ESFwjlzRXO4&usqp=CAU",
         "category": "iphones",
-        "price": 399.99,
+        "price": 300.99,
         "description": "Compact and affordable smartphone with impressive features.",
         "specifications": {
             "display": "4.7 inches",

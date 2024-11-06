@@ -6,57 +6,59 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Cart = () => {
-    const navigate = useNavigate(); // Initialize the useNavigate hook
-    const [cartList, setCartList] = useState([]);
-    const [totalPrice, setTotalPrice] = useState(0);
-    const [showModal, setShowModal] = useState(false); // State to manage modal visibility
+    const navigate = useNavigate();
+    const [cartList, setCartList] = useState([]); 
+    const [totalPrice, setTotalPrice] = useState(0); 
+    const [showModal, setShowModal] = useState(false); 
 
     const allProducts = useLoaderData() || [];
 
-    useEffect(() => {
-        if (Array.isArray(allProducts)) {
-            const storedCartList = getStoredCartList();
-            const storedCartListInt = storedCartList.map(id => parseInt(id, 10));
-            const theCartList = allProducts.filter(product => storedCartListInt.includes(product.product_id));
-            setCartList(theCartList);
-            calculateTotal(theCartList); // Calculate total price
-        } else {
-            console.error("Expected allProducts to be an array, but got:", allProducts);
-        }
-    }, [allProducts]);
-
+    
     const calculateTotal = (products) => {
         const total = products.reduce((acc, product) => acc + product.price, 0);
         setTotalPrice(total);
     };
 
+    
+    useEffect(() => {
+        if (Array.isArray(allProducts)) {
+            const storedCartList = getStoredCartList();
+            const storedCartListInt = storedCartList.map(id => parseInt(id, 10));
+            const theCartList = allProducts.filter(product => storedCartListInt.includes(product.product_id));
+            setCartList(theCartList); 
+            calculateTotal(theCartList);
+        } else {
+            console.error("Expected allProducts to be an array, but got:", allProducts);
+        }
+    }, [allProducts]); 
+
+    
     const handleRemoveItem = (id) => {
-        removeFromStoredCartList(id);
+        removeFromStoredCartList(id); // Remove from storage
         const updatedCart = cartList.filter(product => product.product_id !== id);
-        setCartList(updatedCart);
+        setCartList(updatedCart); // Update the cart in state
         calculateTotal(updatedCart); // Recalculate total price
-        toast.success("Product removed from cart!");
+        toast.success("Product removed from cart!"); // Show toast notification
     };
 
+    // Handle purchase and reset cart
     const handlePurchase = () => {
-        // Show the modal
-        setShowModal(true);
-        // Clear the cart in localStorage
-        localStorage.setItem('cart-list', JSON.stringify([]));
-        // Reset cart list and total price
-        setCartList([]);
-        setTotalPrice(0);
+        setShowModal(true); // Show purchase modal
+        localStorage.setItem('cart-list', JSON.stringify([])); // Clear the cart in localStorage
+        setCartList([]); // Clear cart in state
+        setTotalPrice(0); // Reset total price
     };
 
+    // Close the modal and navigate to home page
     const handleCloseModal = () => {
-        setShowModal(false); // Hide the modal
-        navigate('/'); // Redirect to the home page
+        setShowModal(false); // Close modal
+        navigate('/'); // Redirect to home
     };
 
-    // Function to sort cart items by price in descending order
+    // Sort the cart items by price in descending order
     const sortCartByPrice = () => {
         const sortedCart = [...cartList].sort((a, b) => b.price - a.price);
-        setCartList(sortedCart);
+        setCartList(sortedCart); // Update state with sorted cart
     };
 
     return (
@@ -81,9 +83,13 @@ const Cart = () => {
                 </div>
             </div>
             <br />
-            {cartList.map(product => (
-                <CartItems key={product.product_id} product={product} onRemove={handleRemoveItem} />
-            ))}
+            {cartList.length > 0 ? (
+                cartList.map(product => (
+                    <CartItems key={product.product_id} product={product} onRemove={handleRemoveItem} />
+                ))
+            ) : (
+                <p>Your cart is empty</p> // Display message if cart is empty
+            )}
 
             {/* DaisyUI Modal for Purchase Confirmation */}
             <input type="checkbox" id="purchase-modal" className="modal-toggle" checked={showModal} onChange={() => setShowModal(!showModal)} />

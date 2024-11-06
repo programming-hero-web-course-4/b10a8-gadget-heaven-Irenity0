@@ -6,7 +6,7 @@ import WishItems from "./WishItems";
 const WishList = () => {
     const [wishList, setWishList] = useState([]);
 
-    // Fetch allProducts with a fallback empty array if not found
+    
     const allProducts = useLoaderData() || [];
 
     useEffect(() => {
@@ -21,12 +21,12 @@ const WishList = () => {
     }, [allProducts]);
 
     const handleAddToCart = (id) => {
-        addToStoredCartList(id); // Add the product to the cart
+        addToStoredCartList(id); 
     };
 
     const handleRemoveFromWishList = (id) => {
-        removeFromStoredWishList(id); // Remove the product from the wish list
-        // Update state to reflect removal in UI
+        removeFromStoredWishList(id); 
+
         setWishList((prevList) => prevList.filter(product => product.product_id !== id));
     };
 

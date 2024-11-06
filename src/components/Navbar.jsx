@@ -1,13 +1,27 @@
 import React from 'react';
+import { useState, useEffect } from "react";
+import { getStoredCartList } from "../utilities/AddtoDB";
 import { NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const location = useLocation();
 
-    // Set navbar background based on the route
+    const [cartCount, setCartCount] = useState(0);  
+
+    const calculateCartDetails = () => {
+        const storedCartList = getStoredCartList(); 
+        setCartCount(storedCartList.length); 
+    };
+    
+    useEffect(() => {
+        calculateCartDetails(); 
+    }, []);
+    
+
+    // navbar bg based on the route
     const navbarStyle = {
         backgroundColor: location.pathname === '/' ? '#9538E2' : 'white',
-        color: location.pathname === '/' ? 'white' : 'black', // Adjust text color for contrast
+        color: location.pathname === '/' ? 'white' : 'black', 
         marginTop: '2rem',
         borderTopLeftRadius: '1rem',
         borderTopRightRadius: '1rem'
@@ -41,6 +55,7 @@ const Navbar = () => {
                             <li><NavLink to={'/'}>Home</NavLink></li>
                             <li><NavLink to={'/statistics'}>Statistics</NavLink></li>
                             <li><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
+                            <li><NavLink to={'/aboutus'}>About Us</NavLink></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-2xl font-bold">Gadget Heaven</a>
@@ -50,11 +65,12 @@ const Navbar = () => {
                         <li><NavLink to={'/'}>Home</NavLink></li>
                         <li><NavLink to={'/statistics'}>Statistics</NavLink></li>
                         <li><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
+                        <li><NavLink to={'/aboutus'}>About Us</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
                     <i className="mr-4 border-slate-200 text-1xl p-2 border rounded-full fa-solid fa-cart-shopping">
-                    </i>
+                    {cartCount}</i>
                     <i className="mr-4 border-slate-200 text-1xl p-2 border rounded-full fa-regular fa-heart"></i>
                 </div>
             </div>

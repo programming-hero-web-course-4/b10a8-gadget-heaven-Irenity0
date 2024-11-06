@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Rating from "react-rating-stars-component";
 import productsInfo from "./data.json";
 import { 
   addToStoredCartList, 
@@ -69,10 +70,10 @@ const ProductDetail = () => {
     <>
       <Helmet>
         <title>{product.product_title} - Product Details</title>
-        <meta name="description" content={`Details about ${product.product_title}. Price: $${product.price}`} />
+        <meta name="description" content={`Details about ${product.product_title}`} />
       </Helmet>
 
-      <div className="bg-purple-600 h-96 relative">
+      <div className="bg-purple-600 md:h-52 lg:h-96 relative">
         <div className="w-11/12 mx-auto">
           <br />
           <h1 className="text-4xl font-bold text-center">Product Details</h1>
@@ -83,7 +84,7 @@ const ProductDetail = () => {
         </div>
       </div>
 
-      <div className="w-10/12 mx-auto p-6 absolute left-40 bottom-8">
+      <div className="w-10/12 mx-auto p-6 lg:absolute lg:left-40 lg:bottom-8">
         <div className="card lg:card-side bg-base-100 shadow-xl">
           <figure>
             <img className="h-96 w-auto" src={product.product_image} alt={product.product_title} />
@@ -106,9 +107,17 @@ const ProductDetail = () => {
                 <li><strong>Screen Size:</strong> {product.specifications.screen_size}</li>
               </ul>
             </div>
-            <p className="text-lg">
-              <strong>Rating:</strong> {product.rating} / 5
-            </p>
+            <div className="text-lg mb-2">
+              <strong>Rating:</strong>
+              <Rating
+                count={5}
+                size={24}
+                value={product.rating}
+                edit={false}
+                isHalf={true}
+                activeColor="#ffd700" // Star color
+              />
+            </div>
             <div className="card-actions justify-start">
               <button onClick={() => handleAddToCart(product.product_id)} className="btn btn-outline rounded-full border-purple-600 border-2">Add To Cart</button>
               <button onClick={() => handleAddToWish(product.product_id)} className="btn btn-outline rounded-full border-purple-600 border-2" disabled={isInWishlist}>
