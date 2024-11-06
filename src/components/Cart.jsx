@@ -43,13 +43,13 @@ const Cart = () => {
 
     // Handle purchase and reset cart
     const handlePurchase = () => {
-        setShowModal(true); // Show purchase modal
+        setShowModal(true);
         localStorage.setItem('cart-list', JSON.stringify([])); // Clear the cart in localStorage
         setCartList([]); // Clear cart in state
         setTotalPrice(0); // Reset total price
     };
 
-    // Close the modal and navigate to home page
+    // Close the modal & navigate to home page
     const handleCloseModal = () => {
         setShowModal(false); // Close modal
         navigate('/'); // Redirect to home
@@ -88,10 +88,10 @@ const Cart = () => {
                     <CartItems key={product.product_id} product={product} onRemove={handleRemoveItem} />
                 ))
             ) : (
-                <p>Your cart is empty</p> // Display message if cart is empty
+                <p>Your cart is empty</p> 
             )}
 
-            {/* DaisyUI Modal for Purchase Confirmation */}
+            
             <input type="checkbox" id="purchase-modal" className="modal-toggle" checked={showModal} onChange={() => setShowModal(!showModal)} />
             <div className="modal">
                 <div className="modal-box">
@@ -103,7 +103,7 @@ const Cart = () => {
                 </div>
             </div>
 
-            <ToastContainer position="top-right" autoClose={3000} />
+            <ToastContainer position="top-right" autoClose={2000} />
         </section>
     );
 };

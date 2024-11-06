@@ -19,9 +19,9 @@ const Banner = () => {
   </div>
 </div>
 
-<div className="p-3 bg-white/60 border-2 border-white flex justify-center items-center relative -mt-48 w-8/12 rounded-2xl mx-auto">
+<div className="p-3 bg-white/60 border-2 border-white relative -mt-48 w-8/12 rounded-2xl mx-auto">
   <img
-    className="rounded-3xl h-96 w-full shadow-lg"
+    className="rounded-3xl h-96 w-full shadow-lg object-cover object-center"
     src="https://i.pinimg.com/564x/3b/b3/c9/3bb3c986883164fc0ec7d5d3b920212e.jpg"
     alt="audio"
   />

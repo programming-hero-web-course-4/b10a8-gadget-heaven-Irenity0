@@ -12,8 +12,8 @@ const WishItems = ({ product, onAddToCart, onRemoveFromWishList }) => {
                   <button
                       className="btn text-white bg-purple-500 rounded-full px-4"
                       onClick={() => {
-                          onAddToCart(product.product_id); // Call the function to add to cart
-                          onRemoveFromWishList(product.product_id); // Call the function to remove from wish list
+                          onAddToCart(product.product_id); 
+                          onRemoveFromWishList(product.product_id);
                       }}
                   >
                       Add to Cart

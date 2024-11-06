@@ -115,13 +115,13 @@ const ProductDetail = () => {
                 value={product.rating}
                 edit={false}
                 isHalf={true}
-                activeColor="#ffd700" // Star color
+                activeColor="#ffd700"
               />
             </div>
             <div className="card-actions justify-start">
               <button onClick={() => handleAddToCart(product.product_id)} className="btn btn-outline rounded-full border-purple-600 border-2">Add To Cart</button>
               <button onClick={() => handleAddToWish(product.product_id)} className="btn btn-outline rounded-full border-purple-600 border-2" disabled={isInWishlist}>
-                <i className="fa-regular fa-heart"></i> {isInWishlist ? "Added to Wishlist" : "Add to Wishlist"}
+                <i className="fa-regular fa-heart"></i>
               </button>
             </div>
           </div>
