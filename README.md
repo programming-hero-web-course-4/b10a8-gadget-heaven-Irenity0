@@ -1,8 +1,19 @@
-# React + Vite
+# Gadget Heaven
+Live Link: https://imaginative-horse-f866bb.netlify.app/
+Requirements doc: https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/7be8630e2405d4bc6fd18b37812aebdb2b916132/Batch-10_Assignment-08-.pdf
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## List of React fundamental concepts used in this project
+- UseState (state management)
+- UseEffects 
+- A few other hooks
+- Conditional Rendering
+- Softwares like React-router, react-tostify, react-rating-star-components were used as well
 
-Currently, two official plugins are available:
+- LocalStorage was used for handling & managing data in this project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 5 features of Gadget Heaven
+1. Add to Cart with Cart Total Price Tracking
+2. Wishlist Management
+3. Dynamic Product Details Page
+4. Sort functionality for cart
+5. Responsive UI Design with DaisyUI
